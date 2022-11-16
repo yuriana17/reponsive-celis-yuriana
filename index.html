@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <script src='https://code.jquery.com/jquery-3.6.1.min.js'></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive</title>
+    <meta name='description' content='Descripcion del sitio web' />
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="estilo.css">
+  <script src='https://kit.fontawesome.com/2ee0245f3d.js' crossorigin='anonymous'></script>
+</head>
+<body>
+    <header class="ancho">
+        <div class="contenedorpadre ancho">
+            <figure>
+                <img src="imagenes/logo_arriba.png" alt=""> 
+            </figure>
+            <div class="menu" id="cajamenu">
+                <i class=" barras fa-solid fa-bars"></i>
+            </div>
+            <div>
+                <nav>
+                    <ul id="cambio">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Nuestros Productos</a></li>
+                        <li><a href="#">Contactanos</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+     </header>
+    <section class="fondo">
+        <p>Cultivamos verduras orgánicas <br>
+        y las traemos a las traemos <br>
+    a tu mesa</p>
+    </section>
+    
+    <section class="contenedorart ancho">
+        <div>
+            <h1>Nuestros servicios</h1>
+            <p class="txtverde">Lo que ofrecemos</p>
+        </div>
+        <div class="articulos">
+            <article class="info">
+                <figure>
+                    <img src="imagenes/icono1.png" alt="">
+                </figure>
+                <p class="txtverde">Ganado vacuno</p>
+                <p class="txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto maiores dignissimos consequatur ex nostrum corrupti ipsa praesentium iure repudiandae nemo similique ullam asperiores facilis, dolores autem, quasi illum fugit adipisci?</p>
+            </article>
+            <article class="info">
+                <figure>
+                    <img src="imagenes/icono2.png" alt="">
+                </figure>
+                <p class="txtverde">Productos Lácteos</p>
+                <p class="txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto maiores dignissimos consequatur ex nostrum corrupti ipsa praesentium iure repudiandae nemo similique ullam asperiores facilis, dolores autem, quasi illum fugit adipisci?</p>
+            </article>
+            <article class="info">
+                <figure>
+                    <img src="imagenes/icono3.png" alt="">
+                </figure>
+                <p class="txtverde">Frutas de la Huerta</p>
+                <p class="txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto maiores dignissimos consequatur ex nostrum corrupti ipsa praesentium iure repudiandae nemo similique ullam asperiores facilis, dolores autem, quasi illum fugit adipisci?</p>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <figure>
+            <img src="imagenes/logo_abajo.png" alt="">
+        </figure>
+    </footer>
+
+    <script>
+        //menu desplegable
+        $("#cajamenu").click( function(){
+            $("#cambio").slideToggle();
+        })
+    </script>
+</body>
+</html>

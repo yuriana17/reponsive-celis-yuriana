@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: "Noto Sans JP", sans-serif;
+  }
+  .ancho{
+    max-width: 1200px;
+    margin: auto;
+}
+.contenedorpadre{
+    display: flex;
+    justify-content: space-between;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+}
+header figure {
+    max-width: 200px;
+}
+header figure img {
+    width: 100%;
+}
+.menu{
+    display: none;
+}
+.barras{
+    font-size: 30px;
+    color: #6cb500;
+}
+nav{
+
+}
+nav ul{
+    margin-left: 500px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+nav li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+    color: black;
+}
+.fondo{
+    background-image: url(imagenes/foto_slide.jpg);
+    background-repeat: no-repeat;
+    height: 466px;
+}
+.fondo p{
+    color: white;
+    margin-left: 20%;
+   font-size: 40px;
+   padding-top: 100px;
+}
+.contenedorart{
+}
+.contenedorart h1{
+    text-align: center;
+}
+.txtverde{
+    font-size: 20px;
+    text-align: center;
+    color: #6cb500;
+}
+.articulos{
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.info{
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 330px;
+    flex-direction: row;
+    background-color:  #f3f3f3;
+}
+.info figure{
+    padding-bottom: 5px;
+    margin-left: 35%;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+}
+.info figure img{
+    width: 100%;
+}
+.txt{
+    padding-top: 8px;
+    line-height: 18px;
+    color: black;
+}
+footer{
+    background-color: #6cb500;
+}
+footer figure {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+@media screen and (max-width:760px){
+    .contenedorpadre{
+        flex-direction: column;
+    }
+    nav ul{
+        max-width: 700px;
+        display: flex;
+        margin-left: 30px;
+        flex-direction: column;
+        background-color: #f3f3f3;
+    }
+    nav ul li{
+        width: 100%;
+    }
+    nav li a{
+        display: block;
+        border-bottom: 1px black dotted;
+    }
+    .menu{
+        margin-left: 600px;
+        display: block;
+    }
+    .articulos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-direction: column;
+    }
+}
